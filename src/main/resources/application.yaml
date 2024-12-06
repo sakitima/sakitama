@@ -1,0 +1,23 @@
+#配置数据源
+spring:
+  datasource:
+    username: root
+    password: sakitama
+    url: jdbc:mysql://localhost:3306/book_store?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+      database: 1
+      password:
+  ai:
+    openai:
+      api-key: sk-aesizj236fvwVqAOloAME7Sdfzal1k6JucNHSoXXXXXXX
+      base-url: https://api.openai.com
+
+# 设置mp运行时行为
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:/mapper/*.xml

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.bookstore.common.mapper.BookMapper">
+  <resultMap id="BaseResultMap" type="com.example.bookstore.common.domain.Book">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="book_no" jdbcType="INTEGER" property="bookNo" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="total" jdbcType="INTEGER" property="total" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+  </resultMap>
+
+</mapper>
